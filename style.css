@@ -1,55 +1,63 @@
 .container{
-  display: inline-block;    
-  background-color: #000;
-  color:#fff;
-  padding:20px;
-  font-size:36px;
+  background-color: black;
   width: 430px;
+  padding:20px;
+  border-radius:10px;
+}
+.screen-box{
+  text-align: right;
+  color:white;
 }
 .input-box{
-  overflow: hidden;
+  font-size:30px;
   height:40px;
-  text-align: right;
+  line-height: 40px;
+  overflow: hidden;
 }
 .output-box{
+  font-size:60px;
+  height:70px;
+  line-height: 70px;
   overflow: hidden;
-  height:80px;
-  text-align: right;
-  font-size:72px;
 }
-.row{
-  display:flex;
+/* keyboard style */
+.line{
+  display: flex;
   justify-content: space-between;
+  text-align: center;
   margin-bottom:10px;
 }
-.row > div{
+.line > div{
   width: 100px;
-  line-height: 100px;
-  border-radius:50px;
+  height:100px;
+  line-height:100px;
   text-align: center;
+  color:white;
+  border-radius:50px;
+  font-size:30px;
   cursor: pointer;
 }
 [data-key="0"]{
   width: 210px !important;
 }
-/* 配色 */
-.grey{
-  background-color :#a5a5a5;
-  color:#656565;
-  
+.grey-white{
+  background-color: #a5a5a5;
+  color:black;
 }
-.grey:hover{
-  background-color :#d8d8d8;
-}
-.deepblack{
-  background-color :#333;
-}
-.deepblack:hover{
-  background-color :#727272;
+.grey-white:hover{
+  background-color: #cccaca;
 }
 .orange{
   background-color: #ff9f0c;
+  color:white;
 }
 .orange:hover{
-  background-color: #f2c894;
+  background-color: #ffbb54;
+}
+.grey-black{
+  background-color: #333333;
+  color:white;
+}
+.grey-black:hover{
+  background-color: #747373;
 }
